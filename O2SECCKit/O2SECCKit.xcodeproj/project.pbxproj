@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0B6432C02493344400A1A965 /* O2SECCKit_CreatePackage */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0B6432C12493344400A1A965 /* Build configuration list for PBXAggregateTarget "O2SECCKit_CreatePackage" */;
+			buildPhases = (
+				0B6432C42493345F00A1A965 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = O2SECCKit_CreatePackage;
+			productName = O2SECCKit_CreatePackage;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0B6432B02493329400A1A965 /* O2SECCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6432A62493329400A1A965 /* O2SECCKit.framework */; };
+		0B6432B52493329400A1A965 /* O2SECCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432B42493329400A1A965 /* O2SECCKitTests.m */; };
+		0B6432B72493329400A1A965 /* O2SECCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432A92493329400A1A965 /* O2SECCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6432C8249335CB00A1A965 /* O2SBigInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432C6249335CB00A1A965 /* O2SBigInt.h */; };
+		0B6432C9249335CB00A1A965 /* O2SBigInt.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432C7249335CB00A1A965 /* O2SBigInt.mm */; };
+		0B6432CC2493669400A1A965 /* O2SCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432CA2493669400A1A965 /* O2SCalculator.h */; };
+		0B6432CD2493669400A1A965 /* O2SCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432CB2493669400A1A965 /* O2SCalculator.m */; };
+		0B6432D12493820600A1A965 /* O2SSMxHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432CF2493820600A1A965 /* O2SSMxHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6432D22493820600A1A965 /* O2SSMxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432D02493820600A1A965 /* O2SSMxHelper.m */; };
+		0B6432DC2493899E00A1A965 /* O2SECPointFp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432DA2493899E00A1A965 /* O2SECPointFp.h */; };
+		0B6432DD2493899E00A1A965 /* O2SECPointFp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432DB2493899E00A1A965 /* O2SECPointFp.m */; };
+		0B6432E0249389D300A1A965 /* O2SECFieldElementFp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432DE249389D300A1A965 /* O2SECFieldElementFp.h */; };
+		0B6432E1249389D300A1A965 /* O2SECFieldElementFp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432DF249389D300A1A965 /* O2SECFieldElementFp.m */; };
+		0B6432E4249389F100A1A965 /* O2SECCurveFp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432E2249389F100A1A965 /* O2SECCurveFp.h */; };
+		0B6432E5249389F100A1A965 /* O2SECCurveFp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432E3249389F100A1A965 /* O2SECCurveFp.m */; };
+		0B6432E824939B9E00A1A965 /* O2SSMxUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432E624939B9E00A1A965 /* O2SSMxUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6432E924939B9E00A1A965 /* O2SSMxUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432E724939B9E00A1A965 /* O2SSMxUtils.m */; };
+		0B6432F72493A7D200A1A965 /* O2SSM2Cipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432F12493A7D200A1A965 /* O2SSM2Cipher.m */; };
+		0B6432F82493A7D200A1A965 /* O2SSM2Cipher+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432F22493A7D200A1A965 /* O2SSM2Cipher+Private.h */; };
+		0B6432F92493A7D200A1A965 /* O2SSM2Cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432F32493A7D200A1A965 /* O2SSM2Cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B6432FA2493A7D200A1A965 /* O2SSM3Digest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6432F52493A7D200A1A965 /* O2SSM3Digest.h */; };
+		0B6432FB2493A7D200A1A965 /* O2SSM3Digest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B6432F62493A7D200A1A965 /* O2SSM3Digest.mm */; };
+		0B6433272493B13500A1A965 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B6433262493B13500A1A965 /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B6432B12493329400A1A965 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B64329D2493329400A1A965 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B6432A52493329400A1A965;
+			remoteInfo = O2SECCKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B6432A62493329400A1A965 /* O2SECCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = O2SECCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6432A92493329400A1A965 /* O2SECCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SECCKit.h; sourceTree = "<group>"; };
+		0B6432AA2493329400A1A965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6432AF2493329400A1A965 /* O2SECCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = O2SECCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6432B42493329400A1A965 /* O2SECCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SECCKitTests.m; sourceTree = "<group>"; };
+		0B6432B62493329400A1A965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6432C6249335CB00A1A965 /* O2SBigInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SBigInt.h; sourceTree = "<group>"; };
+		0B6432C7249335CB00A1A965 /* O2SBigInt.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = O2SBigInt.mm; sourceTree = "<group>"; };
+		0B6432CA2493669400A1A965 /* O2SCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SCalculator.h; sourceTree = "<group>"; };
+		0B6432CB2493669400A1A965 /* O2SCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SCalculator.m; sourceTree = "<group>"; };
+		0B6432CF2493820600A1A965 /* O2SSMxHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SSMxHelper.h; sourceTree = "<group>"; };
+		0B6432D02493820600A1A965 /* O2SSMxHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SSMxHelper.m; sourceTree = "<group>"; };
+		0B6432DA2493899E00A1A965 /* O2SECPointFp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SECPointFp.h; sourceTree = "<group>"; };
+		0B6432DB2493899E00A1A965 /* O2SECPointFp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SECPointFp.m; sourceTree = "<group>"; };
+		0B6432DE249389D300A1A965 /* O2SECFieldElementFp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SECFieldElementFp.h; sourceTree = "<group>"; };
+		0B6432DF249389D300A1A965 /* O2SECFieldElementFp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SECFieldElementFp.m; sourceTree = "<group>"; };
+		0B6432E2249389F100A1A965 /* O2SECCurveFp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SECCurveFp.h; sourceTree = "<group>"; };
+		0B6432E3249389F100A1A965 /* O2SECCurveFp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SECCurveFp.m; sourceTree = "<group>"; };
+		0B6432E624939B9E00A1A965 /* O2SSMxUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = O2SSMxUtils.h; sourceTree = "<group>"; };
+		0B6432E724939B9E00A1A965 /* O2SSMxUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = O2SSMxUtils.m; sourceTree = "<group>"; };
+		0B6432F12493A7D200A1A965 /* O2SSM2Cipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = O2SSM2Cipher.m; sourceTree = "<group>"; };
+		0B6432F22493A7D200A1A965 /* O2SSM2Cipher+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "O2SSM2Cipher+Private.h"; sourceTree = "<group>"; };
+		0B6432F32493A7D200A1A965 /* O2SSM2Cipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2SSM2Cipher.h; sourceTree = "<group>"; };
+		0B6432F52493A7D200A1A965 /* O2SSM3Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = O2SSM3Digest.h; sourceTree = "<group>"; };
+		0B6432F62493A7D200A1A965 /* O2SSM3Digest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = O2SSM3Digest.mm; sourceTree = "<group>"; };
+		0B6433262493B13500A1A965 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B6432A32493329400A1A965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6433272493B13500A1A965 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6432AC2493329400A1A965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6432B02493329400A1A965 /* O2SECCKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B64329C2493329400A1A965 = {
+			isa = PBXGroup;
+			children = (
+				0B6432A82493329400A1A965 /* O2SECCKit */,
+				0B6432B32493329400A1A965 /* O2SECCKitTests */,
+				0B6432A72493329400A1A965 /* Products */,
+				0B6433252493B13500A1A965 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B6432A72493329400A1A965 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432A62493329400A1A965 /* O2SECCKit.framework */,
+				0B6432AF2493329400A1A965 /* O2SECCKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B6432A82493329400A1A965 /* O2SECCKit */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432A92493329400A1A965 /* O2SECCKit.h */,
+				0B6432CF2493820600A1A965 /* O2SSMxHelper.h */,
+				0B6432D02493820600A1A965 /* O2SSMxHelper.m */,
+				0B6432E624939B9E00A1A965 /* O2SSMxUtils.h */,
+				0B6432E724939B9E00A1A965 /* O2SSMxUtils.m */,
+				0B6432F02493A7D200A1A965 /* SM2 */,
+				0B6432F42493A7D200A1A965 /* SM3 */,
+				0B6432D82493864A00A1A965 /* EC_Fp */,
+				0B6432D92493866900A1A965 /* EC_F2m */,
+				0B6432C52493358500A1A965 /* BigInt */,
+				0B6432AA2493329400A1A965 /* Info.plist */,
+			);
+			path = O2SECCKit;
+			sourceTree = "<group>";
+		};
+		0B6432B32493329400A1A965 /* O2SECCKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432B42493329400A1A965 /* O2SECCKitTests.m */,
+				0B6432B62493329400A1A965 /* Info.plist */,
+			);
+			path = O2SECCKitTests;
+			sourceTree = "<group>";
+		};
+		0B6432C52493358500A1A965 /* BigInt */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432C6249335CB00A1A965 /* O2SBigInt.h */,
+				0B6432C7249335CB00A1A965 /* O2SBigInt.mm */,
+				0B6432CA2493669400A1A965 /* O2SCalculator.h */,
+				0B6432CB2493669400A1A965 /* O2SCalculator.m */,
+			);
+			path = BigInt;
+			sourceTree = "<group>";
+		};
+		0B6432D82493864A00A1A965 /* EC_Fp */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432E2249389F100A1A965 /* O2SECCurveFp.h */,
+				0B6432E3249389F100A1A965 /* O2SECCurveFp.m */,
+				0B6432DA2493899E00A1A965 /* O2SECPointFp.h */,
+				0B6432DB2493899E00A1A965 /* O2SECPointFp.m */,
+				0B6432DE249389D300A1A965 /* O2SECFieldElementFp.h */,
+				0B6432DF249389D300A1A965 /* O2SECFieldElementFp.m */,
+			);
+			path = EC_Fp;
+			sourceTree = "<group>";
+		};
+		0B6432D92493866900A1A965 /* EC_F2m */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EC_F2m;
+			sourceTree = "<group>";
+		};
+		0B6432F02493A7D200A1A965 /* SM2 */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432F32493A7D200A1A965 /* O2SSM2Cipher.h */,
+				0B6432F22493A7D200A1A965 /* O2SSM2Cipher+Private.h */,
+				0B6432F12493A7D200A1A965 /* O2SSM2Cipher.m */,
+			);
+			path = SM2;
+			sourceTree = "<group>";
+		};
+		0B6432F42493A7D200A1A965 /* SM3 */ = {
+			isa = PBXGroup;
+			children = (
+				0B6432F52493A7D200A1A965 /* O2SSM3Digest.h */,
+				0B6432F62493A7D200A1A965 /* O2SSM3Digest.mm */,
+			);
+			path = SM3;
+			sourceTree = "<group>";
+		};
+		0B6433252493B13500A1A965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B6433262493B13500A1A965 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B6432A12493329400A1A965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6432F82493A7D200A1A965 /* O2SSM2Cipher+Private.h in Headers */,
+				0B6432D12493820600A1A965 /* O2SSMxHelper.h in Headers */,
+				0B6432E824939B9E00A1A965 /* O2SSMxUtils.h in Headers */,
+				0B6432F92493A7D200A1A965 /* O2SSM2Cipher.h in Headers */,
+				0B6432C8249335CB00A1A965 /* O2SBigInt.h in Headers */,
+				0B6432E4249389F100A1A965 /* O2SECCurveFp.h in Headers */,
+				0B6432E0249389D300A1A965 /* O2SECFieldElementFp.h in Headers */,
+				0B6432B72493329400A1A965 /* O2SECCKit.h in Headers */,
+				0B6432DC2493899E00A1A965 /* O2SECPointFp.h in Headers */,
+				0B6432CC2493669400A1A965 /* O2SCalculator.h in Headers */,
+				0B6432FA2493A7D200A1A965 /* O2SSM3Digest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B6432A52493329400A1A965 /* O2SECCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B6432BA2493329400A1A965 /* Build configuration list for PBXNativeTarget "O2SECCKit" */;
+			buildPhases = (
+				0B6432A12493329400A1A965 /* Headers */,
+				0B6432A22493329400A1A965 /* Sources */,
+				0B6432A32493329400A1A965 /* Frameworks */,
+				0B6432A42493329400A1A965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = O2SECCKit;
+			productName = O2SECCKit;
+			productReference = 0B6432A62493329400A1A965 /* O2SECCKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0B6432AE2493329400A1A965 /* O2SECCKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B6432BD2493329400A1A965 /* Build configuration list for PBXNativeTarget "O2SECCKitTests" */;
+			buildPhases = (
+				0B6432AB2493329400A1A965 /* Sources */,
+				0B6432AC2493329400A1A965 /* Frameworks */,
+				0B6432AD2493329400A1A965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B6432B22493329400A1A965 /* PBXTargetDependency */,
+			);
+			name = O2SECCKitTests;
+			productName = O2SECCKitTests;
+			productReference = 0B6432AF2493329400A1A965 /* O2SECCKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B64329D2493329400A1A965 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = O2Space;
+				TargetAttributes = {
+					0B6432A52493329400A1A965 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0B6432AE2493329400A1A965 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					0B6432C02493344400A1A965 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0B6432A02493329400A1A965 /* Build configuration list for PBXProject "O2SECCKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B64329C2493329400A1A965;
+			productRefGroup = 0B6432A72493329400A1A965 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B6432A52493329400A1A965 /* O2SECCKit */,
+				0B6432AE2493329400A1A965 /* O2SECCKitTests */,
+				0B6432C02493344400A1A965 /* O2SECCKit_CreatePackage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B6432A42493329400A1A965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6432AD2493329400A1A965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6432C42493345F00A1A965 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/sh\n\nFMK_NAME=${PROJECT_NAME}\n\nINSTALL_BASE_DIR=${PROJECT_DIR}/../O2SPACE_SDK/O2SECCSDK\nINSTALL_DIR=${INSTALL_BASE_DIR}/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Step 1. Build Device and Simulator versions\n\nxcodebuild -target \"${FMK_NAME}\" clean\n\nxcodebuild -target \"${FMK_NAME}\" -configuration \"Release\" -arch \"arm64\" -arch \"armv7\" -arch \"armv7s\" only_active_arch=no defines_module=yes BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -sdk \"iphoneos\" build\nxcodebuild -target \"${FMK_NAME}\" -configuration \"Release\" -arch \"x86_64\" -arch \"i386\" only_active_arch=no defines_module=yes BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" -sdk \"iphonesimulator\" build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# swift编写的Framework使用 \n#SIMULATOR_SWIFT_MODULES_DIR=\"${SIMULATOR_DIR}/Modules/${FMK_NAME}.swiftmodule/.\"\n#if [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\n#cp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${INSTALL_DIR}/Modules/${FMK_NAME}.swiftmodule\"\n#fi\n\n# Uses the Lipo Tool to merge both binary files into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B6432A22493329400A1A965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6432CD2493669400A1A965 /* O2SCalculator.m in Sources */,
+				0B6432C9249335CB00A1A965 /* O2SBigInt.mm in Sources */,
+				0B6432FB2493A7D200A1A965 /* O2SSM3Digest.mm in Sources */,
+				0B6432F72493A7D200A1A965 /* O2SSM2Cipher.m in Sources */,
+				0B6432DD2493899E00A1A965 /* O2SECPointFp.m in Sources */,
+				0B6432E1249389D300A1A965 /* O2SECFieldElementFp.m in Sources */,
+				0B6432E924939B9E00A1A965 /* O2SSMxUtils.m in Sources */,
+				0B6432E5249389F100A1A965 /* O2SECCurveFp.m in Sources */,
+				0B6432D22493820600A1A965 /* O2SSMxHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B6432AB2493329400A1A965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6432B52493329400A1A965 /* O2SECCKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B6432B22493329400A1A965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B6432A52493329400A1A965 /* O2SECCKit */;
+			targetProxy = 0B6432B12493329400A1A965 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B6432B82493329400A1A965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0B6432B92493329400A1A965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B6432BB2493329400A1A965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				DYLIB_INSTALL_NAME_BASE = "";
+				INFOPLIST_FILE = O2SECCKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_object;
+				PRODUCT_BUNDLE_IDENTIFIER = com.O2Space.O2SECCKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B6432BC2493329400A1A965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				DYLIB_INSTALL_NAME_BASE = "";
+				INFOPLIST_FILE = O2SECCKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MACH_O_TYPE = mh_object;
+				PRODUCT_BUNDLE_IDENTIFIER = com.O2Space.O2SECCKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B6432BE2493329400A1A965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = O2SECCKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.O2Space.O2SECCKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B6432BF2493329400A1A965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = O2SECCKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.O2Space.O2SECCKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0B6432C22493344400A1A965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B6432C32493344400A1A965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B6432A02493329400A1A965 /* Build configuration list for PBXProject "O2SECCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6432B82493329400A1A965 /* Debug */,
+				0B6432B92493329400A1A965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B6432BA2493329400A1A965 /* Build configuration list for PBXNativeTarget "O2SECCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6432BB2493329400A1A965 /* Debug */,
+				0B6432BC2493329400A1A965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B6432BD2493329400A1A965 /* Build configuration list for PBXNativeTarget "O2SECCKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6432BE2493329400A1A965 /* Debug */,
+				0B6432BF2493329400A1A965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B6432C12493344400A1A965 /* Build configuration list for PBXAggregateTarget "O2SECCKit_CreatePackage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6432C22493344400A1A965 /* Debug */,
+				0B6432C32493344400A1A965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B64329D2493329400A1A965 /* Project object */;
+}

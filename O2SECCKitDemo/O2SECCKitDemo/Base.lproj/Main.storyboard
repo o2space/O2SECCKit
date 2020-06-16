@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlq-l1-Xfk">
+                                <rect key="frame" x="107" y="94" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HgX-qR-Top"/>
+                                    <constraint firstAttribute="width" constant="200" id="Qgk-oO-Ig4"/>
+                                </constraints>
+                                <state key="normal" title="测试SM2加解密"/>
+                                <connections>
+                                    <action selector="onStartSM2Crypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9v-ub-9b2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2q-eQ-b7H">
+                                <rect key="frame" x="107" y="174" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3GG-dL-BzS"/>
+                                    <constraint firstAttribute="height" constant="30" id="Mci-b4-YoP"/>
+                                </constraints>
+                                <state key="normal" title="SM2随机生成一个公私钥"/>
+                                <connections>
+                                    <action selector="onGenerateKeyPair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NjM-QA-Wj3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCs-d1-Gc3">
+                                <rect key="frame" x="138" y="384" width="138" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="X1R-eM-Q1n"/>
+                                    <constraint firstAttribute="height" constant="30" id="cZO-cK-1Wt"/>
+                                </constraints>
+                                <state key="normal" title="SM3 Hash"/>
+                                <connections>
+                                    <action selector="onSM3Hash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5L-Fz-9v9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLy-iz-rLh">
+                                <rect key="frame" x="154.5" y="244" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CIr-1J-Swn"/>
+                                    <constraint firstAttribute="width" constant="105" id="Twe-Qe-Tfy"/>
+                                </constraints>
+                                <state key="normal" title="SM2 签名"/>
+                                <connections>
+                                    <action selector="onSM2Sign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xjx-Tt-lGI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thh-WW-t3c">
+                                <rect key="frame" x="154.5" y="314" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="GQU-9t-Rsn"/>
+                                    <constraint firstAttribute="height" constant="30" id="g9c-hK-ZFO"/>
+                                </constraints>
+                                <state key="normal" title="SM2  验签"/>
+                                <connections>
+                                    <action selector="onSM2Verify:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BzP-NB-iEG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d2q-eQ-b7H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1rH-S1-rS0"/>
+                            <constraint firstItem="rCs-d1-Gc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAm-0M-zOS"/>
+                            <constraint firstItem="thh-WW-t3c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EXV-xo-HHK"/>
+                            <constraint firstItem="XLy-iz-rLh" firstAttribute="top" secondItem="d2q-eQ-b7H" secondAttribute="bottom" constant="40" id="KqU-hd-2q4"/>
+                            <constraint firstItem="jlq-l1-Xfk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="LYz-n7-OZ0"/>
+                            <constraint firstItem="d2q-eQ-b7H" firstAttribute="top" secondItem="jlq-l1-Xfk" secondAttribute="bottom" constant="50" id="e0V-e2-fII"/>
+                            <constraint firstItem="rCs-d1-Gc3" firstAttribute="top" secondItem="d2q-eQ-b7H" secondAttribute="bottom" constant="180" id="qcL-Ot-RjG"/>
+                            <constraint firstItem="jlq-l1-Xfk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVY-3M-34q"/>
+                            <constraint firstItem="XLy-iz-rLh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yzu-hn-DmI"/>
+                            <constraint firstItem="thh-WW-t3c" firstAttribute="top" secondItem="XLy-iz-rLh" secondAttribute="bottom" constant="40" id="z2V-oN-cUw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

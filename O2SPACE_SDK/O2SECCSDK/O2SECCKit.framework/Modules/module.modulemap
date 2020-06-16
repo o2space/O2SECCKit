@@ -1,0 +1,6 @@
+framework module O2SECCKit {
+  umbrella header "O2SECCKit.h"
+
+  export *
+  module * { export * }
+}
